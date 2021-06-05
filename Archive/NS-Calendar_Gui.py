@@ -28,12 +28,10 @@ try:
     gui.geometry("400x300")
     gui.title("NS-Calendar")
     gui.configure(bg="#4A3B52")
-    
-# Change the icon path between these comments ar file="/icon path"
-    photo = PhotoImage(file = "/IJ_Calendar.png")
-# Don't Change the code below this line to change the icon
-
-    gui.iconphoto(False, photo)
+    try:
+        gui.iconbitmap("NS_Calendar.png")
+    except:
+        pass
     gui.resizable(False,False)
 
 # defining function called cal to get the calendar of the month and year provided by the user

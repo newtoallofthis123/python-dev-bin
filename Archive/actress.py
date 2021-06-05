@@ -2,9 +2,8 @@ from tkinter import *
 from PIL import ImageTk, Image
 import random
 
-actress = dict(Lili_Reinhart="I:\Assets\Assets from web\py_ac\lili_reinhart.png",
-               Camila_Mendes="I:\Assets\Assets from web\py_ac\Camila_Mendes.png",
-               Candice_King="I:\Assets\Assets from web\py_ac\Candice_King.png",
+actress = dict(
+    img1 = "Assets/noobscience.png"
 )
 actress_name, actress_conv = random.choice(list(actress.items()))
 print(actress_name + ": ")
