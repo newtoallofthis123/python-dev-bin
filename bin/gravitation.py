@@ -39,6 +39,7 @@ m1 = float(input("Enter the mass of the first body(kg): "))
 m2 = float(input("Enter the mass of the second body(kg): "))
 
 # Defining Answer
+radius = radius * radius
 distance = 1/radius
 ans = str(x * m1 * m2 * distance)
 ans_length = len("Gravitational Force(F) = " + ans + " x 10^-11 N-m^2 kg^-2")  # Don't mind this, this is just for the lines in between
