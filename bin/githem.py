@@ -38,6 +38,7 @@ def gitdoit():
 			x = f'git commit -m "{commitMessage_}"'
 			os.system(x)
 			time.sleep(5)
+			commithem()
 		commithem()
 
 gitdoit()
