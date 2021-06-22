@@ -1,6 +1,7 @@
 import os
 import subprocess
 import sys
+import time
 
 working_dir = os.path.dirname(os.path.realpath(__file__))
 def isgitthere():
@@ -36,8 +37,7 @@ def gitdoit():
 				commitMessage_ = commitMessage
 			x = f'git commit -m "{commitMessage_}"'
 			os.system(x)
-			y = "Hello"
-			y.after(1000, commithem)
+			time.sleep(5)
 		commithem()
 
 gitdoit()
