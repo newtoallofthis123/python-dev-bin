@@ -36,7 +36,7 @@ def gitdoit():
 				commitMessage_ = commitMessage
 			x = f'git commit -m "{commitMessage_}"'
 			os.system(x)
-			y = 1
+			y = "Hello"
 			y.after(1000, commithem)
 		commithem()
 
