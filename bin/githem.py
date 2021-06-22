@@ -29,7 +29,7 @@ def gitdoit():
 	if isgitthere() == "do detect git here" and isSysThere() == "-a" :
 		timePeriod = int(input("By The way, can you tell me the time period in seconds: "))
 		commitMessage = str(input("The Commit message, it is 'Update to All Files' by deflaut"))
-		def commithem():
+		def commithem(e):
 			os.system("git add .")
 			if commitMessage == "":
 				commitMessage_ = "Update to All Files"
@@ -37,9 +37,9 @@ def gitdoit():
 				commitMessage_ = commitMessage
 			x = f'git commit -m "{commitMessage_}"'
 			os.system(x)
-			time.sleep(5)
+			time.sleep(e)
 			commithem()
-		commithem()
+		commithem(timePeriod)
 
 gitdoit()
 
