@@ -25,6 +25,18 @@ def gitdoit():
 		x = subprocess.run(['git' ,'status'], capture_output=True)
 		y = str(x.stdout)
 		os.system("git status")
+	if isgitthere() == "do detect git here" and isSysThere() == "-a" :
+		timePeriod = int(input("By The way, can you tell me the time period in seconds: "))
+		commitMessage = str(input("The Commit message, it is 'Update to All Files' by deflaut"))
+		def commithem():
+			os.system("git add .")
+			if commitMessage == "":
+				commitMessage_ = "Update to All Files"
+			else:
+				commitMessage_ = commitMessage
+			x = f'git commit -m "{commitMessage_}"'
+			os.system(x)
+		commithem()
 
 gitdoit()
 
