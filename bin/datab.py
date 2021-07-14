@@ -8,9 +8,9 @@ c = conn.cursor()
 
 # Creating a table
 # c.execute("""CREATE TABLE starWars(
-    # name text,
-    # type text,
-    # role text
+#     name text,
+#     type text,
+#     role text
 # )""")
 
 # Types of datatypes: NULL, INTEGER, REAL, TEXT, BLOB

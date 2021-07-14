@@ -40,6 +40,26 @@ def gitdoit():
 			time.sleep(e)
 			commithem(timePeriod)
 		commithem(timePeriod)
+	if isgitthere() = "do detect git here" and isSysThere() == "-pa":
+		try:
+			file = sys.argv[2]
+			is_the_file_there = os.path.exists(file)
+			if is_the_file_there:
+				timePeriod = int(input("By The way, can you tell me the time period in seconds: "))
+				commitMessage = str(input("The Commit message, it is 'Update to All Files' by deflaut"))
+				def commithem(e):
+					z = f'git add "{file}"'
+					os.system(z)
+					if commitMessage == "":
+						commitMessage_ = "Update to All Files"
+					else:
+						commitMessage_ = commitMessage
+					x = f'git commit -m "{commitMessage_}"'
+					os.system(x)
+					time.sleep(e)
+					commithem(timePeriod)
+				commithem(timePeriod)
+
 
 gitdoit()
 

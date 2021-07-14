@@ -44,6 +44,8 @@ def main():
                     url_ = str(url.get())
                     name1 = str(name.get())
                     name_ = f'%USERPROFILE%/Downloads/{name1}.%(ext)s'
+                    name.config(text="")
+                    url.config(text="")
                     if value.get() == 'Song':
                         command = f'youtube-dl -o {name_} --extract-audio --audio-format mp3 --audio-quality 0 --no-mtime --embed-thumbnail -i {url_}'
                         os.system(command)

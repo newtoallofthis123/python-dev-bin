@@ -207,10 +207,10 @@ def main():
     root = Frame(gui)
     root.pack(pady=20)
 
-    title = Label(root, text="Player", borderwidth=0,fg="black", font=("Cascadia", 24))
+    title = Label(root, text="Player", borderwidth=0,fg="black", font=("Cascadia Code", 24))
     title.grid(row=0, column=0, ipady=10, ipadx=10)
 
-    box = Listbox(root, bg="#F0F0F0", fg="black", width=40, selectbackground=("blue"), selectforeground=("black"), borderwidth=0, font=("Cascadia", 15), selectborderwidth=0,)
+    box = Listbox(root, bg="#F0F0F0", fg="black", width=36, selectbackground=("#85FF00"), selectforeground=("black"), borderwidth=0, font=("Cascadia Code", 15), selectborderwidth=0,)
     box.grid(row=1, column=0)
 
     back_img = PhotoImage(file='Assets/prev.png')
